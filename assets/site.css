@@ -1,0 +1,37 @@
+
+@font-face{font-family:Lexend;src:url(../assets/Lexend.ttf) format("truetype");font-weight:100 900;font-display:swap}
+:root{--deep:#111331;--raised:#1D1C40;--surface:#21244D;--stroke:#4E4989;--primary:#9583F2;--glow:#C69FFD;--text:#FCFCFC;--sub:#B3ACEB}
+*{box-sizing:border-box}
+html{background:var(--deep)}
+body{margin:0;color:var(--text);font:17px/1.55 Lexend,-apple-system,"SF Pro Rounded","Segoe UI",system-ui,sans-serif;
+ background:radial-gradient(1200px 600px at 50% -10%,#2B2D5C 0,transparent 60%),linear-gradient(var(--raised),var(--deep) 60%);min-height:100vh}
+:lang(ar) body,:lang(he) body,:lang(ja) body,:lang(ko) body,:lang(zh-Hans) body,:lang(zh-Hant) body,:lang(ru) body,:lang(uk) body{font-family:-apple-system,"SF Pro Rounded",system-ui,sans-serif}
+a{color:var(--glow)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;gap:14px;padding:22px 0;flex-wrap:wrap}
+header img{width:44px;height:44px;border-radius:11px}
+header .brand{font-weight:700;font-size:20px;color:var(--text);text-decoration:none}
+nav{display:flex;gap:6px;margin-inline-start:auto;flex-wrap:wrap}
+nav a{color:var(--sub);text-decoration:none;padding:10px 14px;border-radius:22px;min-height:44px;display:inline-flex;align-items:center}
+nav a.on{background:var(--primary);color:var(--text)}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.12;margin:28px 0 14px}
+h2{font-size:21px;margin:30px 0 8px}
+.lead{font-size:20px;color:var(--sub);max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:30px 0}
+.card{background:rgba(33,36,77,.9);border:1px solid rgba(78,73,137,.6);border-radius:22px;padding:18px 20px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p,.faq p{margin:0;color:var(--sub)}
+.free{color:var(--sub);margin:24px 0}
+.badge{display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:26px;background:var(--primary);color:var(--text);
+ text-decoration:none;font-weight:600}
+.faq{margin:18px 0}
+.faq details{background:rgba(33,36,77,.9);border:1px solid rgba(78,73,137,.6);border-radius:18px;margin:10px 0;padding:4px 18px}
+.faq summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
+.faq details p{padding:0 0 14px}
+.contact{font-size:19px;margin:20px 0}
+.policy p{white-space:pre-line;color:#E4E1FB}
+.updated{color:var(--sub)}
+footer{margin:48px 0 30px;color:var(--sub);font-size:14px;border-top:1px solid rgba(78,73,137,.5);padding-top:18px}
+footer .langs{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:12px}
+footer .langs a{color:var(--sub);text-decoration:none;min-height:32px;display:inline-flex;align-items:center}
+footer .langs a.on{color:var(--text)}
